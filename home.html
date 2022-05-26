@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ViNeO</title>
+    <link class="icon-logo" rel="shortcut icon" href="logo1.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/59feaf50a6.js" crossorigin="anonymous"></script>
+   
+</head>
+
+<body>
+    <header><div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo1.png" alt="" / width="125px">
+                    </a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="home.html"><i class="fas fa-home"></i><span style="color:white">Home</span></a></li>
+                        <li><a href="index.html#about"><i class="fas fa-address-card"></i><span style="color:white">About</span></a></li>
+                        <li><a href="index.html#about"><i class="fas fa-address-card"></i><span style="color:white">Vision</span></a></li>
+                        <li><a href="index.html#about"><i class="fas fa-address-card"></i><span style="color:white">Our Motto</span></a></li>
+                        <li><a href="index.html#socials"><i class="fas fa-phone"></i><span style="color:white">Contact Us</span></a></li>
+                        <li><a href="www.denewtons.github.io"><i class="dropdown"></i><span style="color:white">Try investment at Pie</span></a></li>
+                        <li><span style="color:white">
+                            <div class="dropdown">
+                            <button class="dropbtn">Products</button>
+                            <div class="dropdown-content">
+                              <a href="#snacks">Snacks</a>
+                              <a href="#drinks">Drinks</a>
+                              <a href="#heavy">Heavy Meals</a>
+                            </div>
+                          </div></span></li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </div>
+    </div>
+</header>
+    <br><br><br><br>
+    <div class="row">
+        <div class="col-2">
+            <i><h1 class="heading">V<i class="heading1">i</i>N<i class="heading1">e</i>O</h1></i>
+            <h3>free delivery at yor door</h3>
+            <p class="btn">
+                for all kimathi comrades! </p>
+        </div>
+    </div>
+    <div class="categories">
+            <div class="make-order" id="myOrder">
+                <button type="button" class="cancel" onclick="closeOrder()">X</button>
+                <form action="order.php" method="POST">
+                <label for="phone"><b>phone number</b></label><br>
+                <input type="phone" class="input"  name="phone" required><br> <br>             
+                <label for="symptom"><b>Items</b></label><br>
+                <select class="input" name="items" id="">
+                    <option value="">select</option>
+                    <option value="">mix</option>
+                    <option value="">mix</option>
+                    <option value="">mix</option>
+                    <option value="">mix</option>
+                    <option value="">mix</option>
+                    <option value="">mix</option>
+                    <option value="">mix</option>
+                    <option value="">mix</option>
+                    <option value="">mix</option>
+                    <option value="">mix</option>
+                </select><br><br>
+                <label for="symptom"><b>Number ofItems</b></label><br>
+                <input type="number" class="input" required>
+                <br><br>
+                  <button type="submit" class="btn" onclick="closeForm()" >Pay</button>
+                </form>
+                </div>
+     </div>
+     <div class="row"><button class="open-button" onclick="openOrder()">Click Here to Order</button></div>
+        <div class="offer">
+    <div class="testimonial">
+        <div class="row">
+			<h3 class="heading1">Do You Love our site? <br>
+                <h2 class="heading1">comment your experience with Us!</h2>
+			 <br><br><br><br><br>
+                <form action="#">
+                    <textarea>comment</textarea><br>
+                    <input class="btn" type="submit" value="submit comment">
+                </form>
+            
+        </h3>
+            
+		</div>
+    </div>
+    <div class="footer_elements">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h2>Download our App</h2>
+                    <p class="btn2"><a href="www.playstore.com">available on 
+                        <img  class="app-logo" src="data:image/jpeg;base64,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" alt="">
+                        <img src="images/app-store.png" alt=""></a>
+                    </p>
+                </div>
+                <br><br>
+                <div id="about" class="footer-col-2">
+
+                   <h2>About Us</h2>
+                   <p>We are a small coollective groug of youg business orners.</p>
+                   <p>This site is for promotion of products and selling our own products</p>
+                   <h4 class="heading">Vision</h4>
+                    <p>Providing the best quality and nutritious meals, to build a nation of genetical strength and mind stability.</p>
+                    <h4 class="heading">MOTTO</h4>
+                    <p>Good Health is Life Worth Living</p>
+                </div>
+                <div id="socials" class="footer-col-3">
+                <h3>Chat with Us On:</h3>
+                <ul>
+                    <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-instagram-alt'></i>
+                </ul>
+            </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <hr>
+	
+<p class="copyright">Copyright &copy;nio 2022 </p></hr>
+<script src="app.js"></script>
+</body>
+</html>
